@@ -18,7 +18,7 @@ torch.manual_seed(0)
 
 model = nn.Sequential(
     nn.Linear(1, 2),
-    nn.Sigmoid(),
+    nn.Tanh(),
     nn.Linear(2, 1)
 )
 criterion = nn.MSELoss()
@@ -62,7 +62,7 @@ for n_epocas in lista_epocas:
 
     model = nn.Sequential(
         nn.Linear(1, 2),
-        nn.Sigmoid(),
+        nn.Tanh(),
         nn.Linear(2, 1)
     )
     criterion = nn.MSELoss()
@@ -91,7 +91,7 @@ for lr in lista_lr:
 
     model = nn.Sequential(
         nn.Linear(1, 2),
-        nn.Sigmoid(),
+        nn.Tanh(),
         nn.Linear(2, 1)
     )
     criterion = nn.MSELoss()
